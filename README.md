@@ -6,6 +6,15 @@ This program synchronizes files between a source folder and a replica folder.
 
 The program iterates through the files in the source folder and checks if they exist in the replica folder. If a file is missing in the replica folder or if it's different, it copies the file. It also removes files from the replica folder that don't exist in the source folder.
 
+## Dependencies:
+
+- Python 3.x
+- No third-party libraries are required. The program utilizes built-in Python libraries:
+  - os
+  - shutil
+  - logging
+  - time
+
 ## Usage:
 
 1. Run the program.
@@ -25,7 +34,3 @@ The program logs the synchronization actions to a log file.
 ## Example Usage:
 
 Open a terminal in the folder where the program is located and run:
-
-```
-python main.py
-```
