@@ -74,7 +74,7 @@ def main():
 
     # get source and replica folder paths from user input
     source_folder = input("Enter the path to the source folder: ")
-    replica_folder = input("Enter the path to the replica folder: ")
+    replica_folder = input("Enter the path to the replica folder(a new folder will be created if it doesn't exist): ")
 
     # initial synchronization of folders
     sync_folders(source_folder, replica_folder)
