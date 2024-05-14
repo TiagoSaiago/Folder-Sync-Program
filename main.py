@@ -84,5 +84,11 @@ def main():
         sync_folders(source_folder, replica_folder)
         time.sleep(interval)
 
+        # check if the user wants to stop synchronization
+        stop_sync = input("Enter 'stop' to stop synchronization, or press Enter to continue: ")
+        if stop_sync.lower() == 'stop':
+            logging.info("Synchronization stopped by user.")
+            break  # exit the loop if the user wants to stop synchronization
+
 if __name__ == "__main__":
     main()
