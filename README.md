@@ -34,3 +34,7 @@ The program logs the synchronization actions to a log file.
 ## Example Usage:
 
 Open a terminal in the folder where the program is located and run:
+
+```
+python main.py
+```
